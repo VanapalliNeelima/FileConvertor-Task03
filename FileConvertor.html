@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: black;
+            
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+            background-color: skyblue;
+            height:80px;
+            width:200px;
+            margin-left: 90px;
+            padding-top: 60px;
+            padding-left: 20px;
+        }
+
+        .maindiv{
+            justify-content: center;
+            margin-left:500px;
+            margin-top: 200px;
+            background: whitesmoke;
+            width:400px;
+            height: 300px;
+            border-radius: 30px;
+        }
+        h1{
+            text-align: center;
+        }
+        .btn{
+            background-color: skyblue;
+            height: 30px;
+            width: 100px;
+            margin-left: 140px;
+            margin-top: 30px;
+            border-color: skyblue;
+            
+        }
+        #hello{
+            margin-left: 60px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <h1>File Convertor</h1>
+       
+        <input type="file" id="fileInput"> 
+
+        <button  class="btn"  onclick="convertFile()">Convert</button>
+        <a id="downloadLink" style="display: none;">Download Converted File</a>
+
+    </div>
+
+
+    <script src="fileconvertor.js"></script>
+</body>
+</html>
